@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Studio / About Us</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(
+                135deg,
+                #000000bd,
+                hsl(300, 60%, 17%),
+                #000000
+            );
+            background-size: 300% 300%;
+            animation: glossyMove 12s ease infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                120deg,
+                rgba(0, 0, 0, 0.938),
+                rgba(0, 0, 0, 0.836),
+                rgba(0, 0, 0, 0.959)
+            );
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        @keyframes glossyMove {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+               radial-gradient(circle at 20% 30%, rgba(75, 4, 68, 0.12), transparent 40%),
+               radial-gradient(circle at 80% 70%, rgba(255, 0, 255, 0.12), transparent 40%);
+            pointer-events: none;
+        }
+        header {
+            height: 50px;
+            padding: 10px 15px;
+            background: transparent;
+            display: flex;
+            z-index: 1;
+            align-items: center;
+            justify-content: center;
+            color: rgb(248, 0, 207);
+            font-family: 'Gill Sans', Calibri, sans-serif;
+            font-style: italic;
+            font-size: 15px;
+            position: relative;
+        }
+        header h2 {
+            margin: 0;
+            padding: 6px 14px;
+            position: relative;
+            z-index: 10;
+        }
+        header h2:hover{
+            
+            color: yellow;
+            cursor: pointer;
+        }
+        .about-content {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: left;
+            font-style: italic;
+            color: white;
+            z-index: 1;
+            padding: 80px 0 0 120px;
+        }
+
+        .about-content h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        .about-features {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .about-card {
+                padding: 14px 20px;
+                border-radius: 18px;
+                
+                background: rgba(255, 255, 255, 0.12);
+                backdrop-filter: blur(6px);
+                
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+            
+                transition: transform 0.25s ease,
+                        box-shadow 0.25s ease,
+                        background 0.25s ease;
+              }
+        .about-card:hover {
+                transform: translateY(-4px);
+                background: rgba(255, 255, 255, 0.2);
+                box-shadow: 0 10px 22px rgba(255, 0, 242, 0.5);
+            }
+        .about-intro {
+            font-size: 15px;          
+            line-height: 2;
+            max-width: 520px;            
+            margin:  0;
+            color: #d0d0d0;
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+    .about-content {
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-intro {
+        text-align: center;
+        margin: auto;
+    }
+
+    .about-features {
+        justify-content: center;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>About us</h2>
+        </header>
+             <div class="about-content">
+            <div>
+                <h1>About Us.</h1> 
+                    <p class="about-intro">
+                        We offer well-structured courses, interactive lessons, and project-based learning paths
+                        that help learners understand concepts deeply and apply them confidently. Whether you
+                        are starting from scratch or upgrading your existing skills, E-Learning Studio provides
+                        a guided and flexible environment to support your learning journey.
+                    
+                        Our mission is to make quality education accessible, engaging, and result-oriented.
+                        By combining structured guidance, practical assignments, and self-paced learning,
+                        we aim to help learners build confidence, problem-solving ability, and readiness for
+                        academic as well as professional challenges.
+                    
+                        At E-Learning Studio, learning is not just about consuming content — it is about
+                        building skills, creating projects, and growing step by step toward your goals.
+                    </p>
+                <div class="about-features">
+                    <div class="about-card">📚 Learn Anywhere</div>
+                    <div class="about-card">🧑‍💻 Practical Learning Approach</div>
+                    <div class="about-card">🎯 Student-First Learning</div>
+                    <div class="about-card">🌐 Trusted Learning Platform</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@media (max-width: 576px) {
+
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .about-content {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .about-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  input {
+    width: 90vw;
+  }
+}
+@media (max-width: 768px) {
+
+  .about-content {
+    padding: 60px 30px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .about-content {
+    padding: 80px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-features {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .input-center input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .cards-center {
+    position: static;              
+    transform: none;
+    flex-direction: column;         
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 16px;
+    gap: 20px;
+  }
+
+  .card1, .card2, .card3 {
+    width: 100%;                   
+    max-width: 320px;
+    height: auto;                  
+  }
+
+  .card1 ul,
+  .card2 ul,
+  .card3 ul {
+    padding: 16px;
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .cards-center {
+    position: static;
+    transform: none;
+    flex-wrap: wrap;                
+    justify-content: center;
+    margin-top: 80px;
+    padding: 0 24px;
+  }
+
+  .card1, .card2, .card3 {
+    width: 45%;
+    max-width: 340px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .cards-center {
+    gap: 24px;
+  }
+
+  .card1, .card2, .card3 {
+    width: 300px;
+    height: auto;
+  }
+}
