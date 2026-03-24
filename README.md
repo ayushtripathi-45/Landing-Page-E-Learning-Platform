@@ -3,7 +3,7 @@
 A clean and professional **multi-page web landing website** built to practice and demonstrate **HTML & CSS fundamentals**, responsive layouts, and modern UI design.  
 This project focuses entirely on **frontend development** and does **not include backend or database functionality**.
 
----
+---    
 
 ## Live Demo : [E-Learning Studio](https://e-learning-studio.netlify.app/)
 
